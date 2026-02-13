@@ -1,0 +1,135 @@
+/* Health.css */
+
+.health-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.date-picker-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.health-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-datepicker {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #444;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 8px;
+  width: 180px;
+}
+
+.health-button-preset-date,
+.health-button-toggle {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: none;
+  padding: 6px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.health-button-preset-date:hover,
+.health-button-toggle:hover {
+  background-color: #444;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.charts-container.small-graphs {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.chart-wrapper {
+  width: 100%;
+  cursor: pointer;
+}
+
+.charts-container.small-graphs .chart-wrapper {
+  width: 400px;
+  margin: 10px;
+
+}
+
+
+
+/* Override react-datepicker styles for dark theme */
+.react-datepicker {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+.react-datepicker__header {
+  background-color: #3a3a3a;
+  border-bottom: 1px solid #444;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: #ffffff;
+}
+
+.react-datepicker__day:hover {
+  background-color: #4a4a4a;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background-color: #050606;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #080808;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .health-container {
+    padding: 1px;
+  }
+
+  .health-button-container {
+    padding: 10px;
+  }
+
+  .chart-wrapper {
+    height: 400px;
+    width: 100%;
+  }
+
+  .date-picker-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-datepicker {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+}

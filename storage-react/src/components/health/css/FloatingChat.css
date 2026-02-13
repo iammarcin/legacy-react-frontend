@@ -1,0 +1,123 @@
+/* FloatingChat.css */
+
+.floating-chat-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.floating-chat-resizableBox {
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floating-chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.floating-chat-messages {
+  flex: 1;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.floating-chat-message {
+  margin-bottom: 10px;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #444;
+}
+
+/* overwriting bottom tools stuff - for floating */
+.floating-bottom-tools-menu .input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.floating-bottom-tools-menu .message-input {
+  flex: 1;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin-right: 0px;
+}
+
+.floating-bottom-tools-menu .button-container {
+  display: flex;
+  padding-top: 20px;
+  column-gap: 0px;
+  margin-bottom: 20px;
+}
+
+.floating-bottom-tools-menu .send-button,
+.floating-bottom-tools-menu .attach-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0px;
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+/* end of overwriting bottom tools stuff - for floating */
+
+/* overwriting chat message stuff - for floating */
+.floating-chat-message {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 2px;
+}
+
+.floating-chat-message .date-ai-model-name {
+  right: 2px;
+  font-size: 0.5rem;
+}
+
+/* end of overwriting chat message stuff - for floating */
+
+.floating-chat-minimizeButton {
+  align-self: flex-end;
+  margin: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.floating-chat-minimizedButton {
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.floating-chat-minimizedButton:hover,
+.floating-chat-minimizeButton:hover {
+  background-color: #555;
+  padding: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .floating-chat-messages {
+    padding: 0px;
+    padding-right: 2px;
+  }
+
+}

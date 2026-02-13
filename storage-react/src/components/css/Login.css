@@ -1,0 +1,43 @@
+/* Login.css */
+.login {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+}
+
+.login form div {
+  margin-bottom: 15px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login .error {
+  color: red;
+  margin-top: 10px;
+}

@@ -1,0 +1,843 @@
+/* Pangea Content Showcase - Presentation Style */
+
+.pangea-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.pangea-intro-section {
+  background: linear-gradient(135deg, #2c5f2d 0%, #1e4620 100%);
+  color: white;
+  padding: 60px 40px 50px;
+  text-align: center;
+}
+
+.pangea-intro-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.5px;
+}
+
+.pangea-intro-header h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+}
+
+.pangea-intro-tagline {
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pangea-intro-content {
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+
+.pangea-intro-text p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* ============================================
+   SHOWCASE SECTIONS (Shared Styles)
+   ============================================ */
+
+.pangea-showcase-section {
+  padding: 50px 20px;
+  margin-bottom: 0;
+}
+
+.pangea-kids-section {
+  background-color: #fff8e7;
+}
+
+.pangea-general-section {
+  background-color: #f0f9ff;
+}
+
+.pangea-investor-section {
+  background-color: #f8f9fa;
+}
+
+.pangea-video-section {
+  background-color: #fef3f2;
+}
+
+/* Section Headers */
+
+.pangea-showcase-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.pangea-showcase-number {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background-color: #2c5f2d;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 55px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.pangea-showcase-header h2 {
+  font-size: 2.2rem;
+  color: #2c5f2d;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.pangea-showcase-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Explanation Boxes */
+
+.pangea-showcase-explanation {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.pangea-explanation-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #2c5f2d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.pangea-explanation-box h3 {
+  font-size: 1.4rem;
+  color: #2c5f2d;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.pangea-explanation-box p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ============================================
+   MATERIALS DISPLAY - STACKED VERTICAL LAYOUT
+   ============================================ */
+
+.pangea-showcase-materials {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pangea-material-item {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pangea-material-item-single {
+  /* Same as regular items now - all vertical */
+}
+
+.pangea-material-image-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.pangea-material-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.pangea-material-description {
+  padding: 30px;
+}
+
+.pangea-material-description h4 {
+  font-size: 1.7rem;
+  color: #2c5f2d;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.pangea-material-type {
+  font-size: 0.95rem;
+  color: #d97706;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 18px 0;
+}
+
+.pangea-material-description > p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.pangea-material-features {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0 0;
+}
+
+.pangea-material-features li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.pangea-material-features li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2c5f2d;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* ============================================
+   INVESTOR SECTION SPECIFIC
+   ============================================ */
+
+.pangea-concept-breakdown {
+  margin: 18px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.pangea-concept-part {
+  margin-bottom: 18px;
+}
+
+.pangea-concept-part:last-child {
+  margin-bottom: 0;
+}
+
+.pangea-concept-part h5 {
+  font-size: 1.25rem;
+  color: #1e3a8a;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.pangea-concept-part p {
+  font-size: 0.98rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ============================================
+   VIDEO SECTION SPECIFIC
+   ============================================ */
+
+.pangea-material-video-container {
+  background-color: #000;
+  width: 100%;
+}
+
+.pangea-material-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pangea-video-applications {
+  margin-top: 20px;
+}
+
+.pangea-video-applications h5 {
+  font-size: 1.15rem;
+  color: #2c5f2d;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.pangea-video-note {
+  margin-top: 20px;
+  padding: 18px;
+  background-color: #fef3f2;
+  border-left: 4px solid #dc2626;
+  border-radius: 6px;
+}
+
+.pangea-video-note p {
+  font-size: 0.98rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.pangea-video-note strong {
+  color: #dc2626;
+}
+
+/* ============================================
+   CHATBOT SECTION
+   ============================================ */
+
+.pangea-chatbot-section {
+  background: linear-gradient(135deg, #2c5f2d 0%, #1e4620 100%);
+  padding: 50px 20px;
+  margin-top: 0;
+}
+
+.pangea-chatbot-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: white;
+}
+
+.pangea-chatbot-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.pangea-chatbot-header h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: white;
+}
+
+.pangea-chatbot-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.pangea-chatbot-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pangea-chatbot-response-area {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #2c5f2d;
+}
+
+.pangea-chatbot-response-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.pangea-chatbot-response-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.pangea-chatbot-error {
+  padding: 20px;
+  background-color: #fee;
+  border-left: 4px solid #dc2626;
+  border-radius: 8px;
+  color: #991b1b;
+}
+
+.pangea-chatbot-input-area {
+  margin-bottom: 25px;
+}
+
+.pangea-chatbot-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.pangea-chatbot-input:focus {
+  outline: none;
+  border-color: #2c5f2d;
+}
+
+.pangea-chatbot-input:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.pangea-chatbot-button {
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #2c5f2d 0%, #1e4620 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pangea-chatbot-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 95, 45, 0.3);
+}
+
+.pangea-chatbot-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pangea-chatbot-examples {
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.pangea-chatbot-examples-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.pangea-chatbot-examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.pangea-example-question {
+  padding: 12px 18px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.pangea-example-question:hover:not(:disabled) {
+  background-color: #e5e7eb;
+  border-color: #2c5f2d;
+  color: #2c5f2d;
+}
+
+.pangea-example-question:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.pangea-footer {
+  background: linear-gradient(135deg, #2c5f2d 0%, #1e4620 100%);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 0;
+}
+
+.pangea-footer p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .pangea-intro-section {
+    padding: 50px 30px 40px;
+  }
+
+  .pangea-intro-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .pangea-intro-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .pangea-showcase-section {
+    padding: 45px 20px;
+  }
+
+  .pangea-showcase-header h2 {
+    font-size: 2rem;
+  }
+
+  .pangea-material-description {
+    padding: 28px;
+  }
+}
+
+/* Mobile - Large */
+@media (max-width: 768px) {
+  .pangea-intro-section {
+    padding: 40px 20px 35px;
+  }
+
+  .pangea-intro-header h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .pangea-intro-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .pangea-intro-tagline {
+    font-size: 1rem;
+  }
+
+  .pangea-intro-text p {
+    font-size: 1rem;
+  }
+
+  .pangea-showcase-section {
+    padding: 35px 15px;
+  }
+
+  .pangea-showcase-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin-bottom: 12px;
+  }
+
+  .pangea-showcase-header {
+    margin-bottom: 30px;
+  }
+
+  .pangea-showcase-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .pangea-showcase-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .pangea-showcase-explanation {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .pangea-explanation-box {
+    padding: 20px;
+  }
+
+  .pangea-explanation-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .pangea-explanation-box p {
+    font-size: 0.95rem;
+  }
+
+  .pangea-showcase-materials {
+    padding: 0 15px;
+  }
+
+  .pangea-material-item {
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+
+  .pangea-material-description {
+    padding: 22px;
+  }
+
+  .pangea-material-description h4 {
+    font-size: 1.45rem;
+  }
+
+  .pangea-material-type {
+    font-size: 0.88rem;
+  }
+
+  .pangea-material-description > p {
+    font-size: 0.98rem;
+  }
+
+  .pangea-material-features li {
+    font-size: 0.95rem;
+    padding-left: 25px;
+  }
+
+  .pangea-concept-breakdown {
+    padding: 18px;
+  }
+
+  .pangea-concept-part {
+    margin-bottom: 15px;
+  }
+
+  .pangea-concept-part h5 {
+    font-size: 1.15rem;
+  }
+
+  .pangea-concept-part p {
+    font-size: 0.93rem;
+  }
+
+  .pangea-video-applications h5 {
+    font-size: 1.1rem;
+  }
+
+  .pangea-chatbot-section {
+    padding: 40px 15px;
+  }
+
+  .pangea-chatbot-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .pangea-chatbot-description {
+    font-size: 0.98rem;
+  }
+
+  .pangea-chatbot-container {
+    padding: 25px;
+  }
+
+  .pangea-chatbot-response-area {
+    padding: 20px;
+  }
+
+  .pangea-chatbot-examples-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile - Small */
+@media (max-width: 480px) {
+  .pangea-intro-section {
+    padding: 35px 15px 30px;
+  }
+
+  .pangea-intro-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .pangea-intro-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .pangea-intro-tagline {
+    font-size: 0.95rem;
+  }
+
+  .pangea-intro-text p {
+    font-size: 0.95rem;
+  }
+
+  .pangea-showcase-section {
+    padding: 30px 12px;
+  }
+
+  .pangea-showcase-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    line-height: 45px;
+  }
+
+  .pangea-showcase-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .pangea-showcase-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .pangea-showcase-explanation {
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  .pangea-explanation-box {
+    padding: 18px;
+  }
+
+  .pangea-explanation-box h3 {
+    font-size: 1.15rem;
+  }
+
+  .pangea-explanation-box p {
+    font-size: 0.9rem;
+  }
+
+  .pangea-showcase-materials {
+    padding: 0 12px;
+  }
+
+  .pangea-material-item {
+    margin-bottom: 20px;
+  }
+
+  .pangea-material-description {
+    padding: 18px;
+  }
+
+  .pangea-material-description h4 {
+    font-size: 1.3rem;
+  }
+
+  .pangea-material-type {
+    font-size: 0.85rem;
+  }
+
+  .pangea-material-description > p {
+    font-size: 0.93rem;
+  }
+
+  .pangea-material-features li {
+    font-size: 0.9rem;
+    padding-left: 22px;
+    margin-bottom: 8px;
+  }
+
+  .pangea-concept-breakdown {
+    padding: 15px;
+  }
+
+  .pangea-concept-part h5 {
+    font-size: 1.08rem;
+  }
+
+  .pangea-concept-part p {
+    font-size: 0.9rem;
+  }
+
+  .pangea-video-note {
+    padding: 15px;
+  }
+
+  .pangea-video-note p {
+    font-size: 0.9rem;
+  }
+
+  .pangea-footer {
+    padding: 30px 15px;
+  }
+
+  .pangea-footer p {
+    font-size: 0.95rem;
+  }
+
+  .pangea-chatbot-section {
+    padding: 35px 12px;
+  }
+
+  .pangea-chatbot-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .pangea-chatbot-description {
+    font-size: 0.93rem;
+  }
+
+  .pangea-chatbot-badge {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+  }
+
+  .pangea-chatbot-container {
+    padding: 20px;
+  }
+
+  .pangea-chatbot-response-area {
+    padding: 18px;
+  }
+
+  .pangea-chatbot-response-text {
+    font-size: 0.98rem;
+  }
+
+  .pangea-chatbot-input {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .pangea-chatbot-button {
+    font-size: 0.98rem;
+    padding: 12px 24px;
+  }
+
+  .pangea-example-question {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}

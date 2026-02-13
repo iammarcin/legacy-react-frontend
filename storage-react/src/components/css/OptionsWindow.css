@@ -1,0 +1,120 @@
+/* OptionsWindow.css */
+
+.options-window {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.options-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.options-button.active {
+  font-weight: bold;
+}
+
+.options-content {
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.option-item label {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.option-item input[type="range"] {
+  flex: 3;
+  appearance: none;
+  background-color: #555;
+  height: 5px;
+}
+
+.option-item input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.option-item input[type="text"] {
+  flex: 1;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 5px;
+}
+
+.option-item input[type="password"] {
+  flex: 1;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 5px;
+}
+
+.option-item input[type="checkbox"] {
+  appearance: none;
+  background-color: #333;
+  border: 1px solid #555;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.option-item input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.option-item span {
+  flex: 1;
+  text-align: right;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.optionsAdditionalText {
+  display: block;
+  font-size: 0.7rem;
+  margin-block-start: 0rem;
+  margin-block-end: 1.67rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  color: #706a6a;
+}

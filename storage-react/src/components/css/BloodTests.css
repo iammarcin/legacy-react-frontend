@@ -1,0 +1,397 @@
+/* docker/storage-react/src/components/css/BloodTests.css */
+
+.blood-tests-container {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blood-tests-container h2 {
+  color: #4ec9b0;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.blood-tests-container h3 {
+  color: #9cdcfe;
+  border-bottom: 2px solid #4a4a4a;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+  margin-bottom: 30px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.blood-tests-container table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background-color: #252526;
+  table-layout: fixed;
+}
+
+.blood-tests-container th,
+.blood-tests-container td {
+  border: 1px solid #3e3e42;
+  padding: 12px 15px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.blood-tests-container th {
+  background-color: #333333;
+  color: #d4d4d4;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.blood-tests-container td {
+  color: #cccccc;
+}
+
+.blood-tests-container tr:nth-child(even) {
+  background-color: #2a2a2b;
+}
+
+.blood-tests-container tr:hover {
+  background-color: #3e3e42;
+}
+
+.out-of-range {
+  background-color: rgba(244, 135, 113, 0.2) !important;
+}
+
+.out-of-range .result-value {
+  color: #f48771;
+  font-weight: bold;
+}
+
+.blood-tests-container td:first-child,
+.blood-tests-container th:first-child {
+  white-space: normal;
+  font-weight: bold;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: #333333;
+  min-width: 200px;
+}
+
+.blood-tests-container tr:nth-child(even) td:first-child {
+  background-color: #2a2a2b;
+}
+
+.blood-tests-container tr:hover td:first-child {
+  background-color: #3e3e42;
+}
+
+.test-name-cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.test-name-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.test-name-text {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #9cdcfe;
+  text-underline-offset: 3px;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 250px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -125px;
+  transition: opacity 0.3s, visibility 0.3s;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1e1e1e transparent transparent transparent;
+}
+
+/* Fix for tooltip on the first row being clipped */
+.blood-tests-container tbody tr:first-child .test-name-cell .tooltip {
+  top: 115%;
+  bottom: auto;
+  z-index: 1001;
+}
+
+.blood-tests-container tbody tr:first-child .test-name-cell .tooltip::after {
+  top: auto;
+  bottom: 100%;
+  border-color: transparent transparent #1e1e1e transparent;
+}
+
+@media (hover: hover) {
+  .test-name-cell:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tooltip.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.result-value {
+  font-weight: bold;
+}
+
+.error-message {
+  color: #f48771;
+  background-color: rgba(244, 135, 113, 0.1);
+  border: 1px solid #f48771;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.highlight-toggle-btn {
+  background-color: #4ec9b0;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.highlight-toggle-btn:hover {
+  background-color: #5dd5bc;
+}
+
+.highlight-toggle-btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .blood-tests-container {
+    padding: 10px;
+  }
+
+  .content-wrapper {
+    padding: 0;
+  }
+
+  .blood-tests-container h2 {
+    font-size: 1.8em;
+  }
+
+  .blood-tests-container h3 {
+    font-size: 1.3em;
+  }
+
+  .blood-tests-container th,
+  .blood-tests-container td {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .blood-tests-container td:first-child,
+  .blood-tests-container th:first-child {
+    min-width: 150px;
+  }
+
+  .tooltip.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 125%;
+    left: 10px;
+    margin-left: 0;
+    width: calc(100vw - 40px);
+    max-width: 300px;
+  }
+
+  .tooltip.active::after {
+    left: 20px;
+  }
+}
+
+.read-more-btn {
+  background-color: #4ec9b0;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.read-more-btn:hover {
+  background-color: #5dd5bc;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #252526;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #d4d4d4;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #d4d4d4;
+  font-size: 2.5em;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-content h3 {
+  color: #4ec9b0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4a4a4a;
+  font-size: 1.5em;
+}
+
+.modal-body {
+  font-size: 1em;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.floating-tooltip {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.tooltip-content {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+  line-height: 1.4;
+  white-space: normal;
+  width: 250px;
+  max-width: 90vw;
+}
+
+.floating-tooltip[data-position="above"] .tooltip-content {
+  transform: translateY(-100%);
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.floating-tooltip[data-position='above'] .tooltip-content::after {
+  top: 100%;
+  border-color: #1e1e1e transparent transparent transparent;
+}
+
+.floating-tooltip[data-position='below'] .tooltip-content::after {
+  bottom: 100%;
+  border-color: transparent transparent #1e1e1e transparent;
+}
+
+.floating-tooltip[data-position='right'] .tooltip-content::after {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: -10px;
+  border-color: transparent #1e1e1e transparent transparent;
+}
+
+.floating-tooltip[data-position='left'] .tooltip-content::after {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 0;
+  border-color: transparent transparent transparent #1e1e1e;
+}

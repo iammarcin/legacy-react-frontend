@@ -1,0 +1,47 @@
+/* ChatWindow.css */
+
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.chat-window h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.chat-window .messages {
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  /* Ensure messages section is scrollable */
+}
+
+.scroll-to-bottom {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-bottom:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .chat-window {
+    padding: 5px;
+  }
+}
