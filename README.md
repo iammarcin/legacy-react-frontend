@@ -23,7 +23,7 @@ A full-featured web frontend for interacting with AI models through a rich, mult
 - Text-to-speech via ElevenLabs with voice selection and speed control
 - Speech-to-text transcription via Deepgram with real-time audio recording
 - Web search, reasoning mode, and agent mode toggles
-- Proactive AI assistant (Sherlock) that anticipates follow-up queries
+- Proactive AI assistant 
 
 **Health & Fitness Dashboard**
 - Garmin API integration with 13+ specialized chart types
